@@ -39,7 +39,7 @@ public:
         long long maxPerformanceOfTeam = 0;
         int numberOfEnginnersInTeam = 0;
 
-        for (Engineer engineer : engineers) {
+        for (const auto& engineer : engineers) {
 
             if (numberOfEnginnersInTeam++ == maxNumberOfDifferentEngineersToSelect) {
                 sumSpeed -= minHeapSpeed.top();
